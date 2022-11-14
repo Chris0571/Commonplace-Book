@@ -7,5 +7,6 @@ $ wsl --install
 $ wsl --install -d <distro name>        (install a determined distro)
 $ wsl --list                            (displays local distros)
 $ wsl --list --online | -l -o           (displays online available distros)
+$ wsl -l -v                             (display instances and version)
 $ wsl.exe --set-version <distro name> 2 (upgrade a distro to wsl2)
 

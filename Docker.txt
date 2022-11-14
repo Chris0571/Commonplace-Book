@@ -1,22 +1,14 @@
- 
+  
+ docker ps -a                      (List container)
 
-## List container
- docker ps -a
+$ docker image                      (List images)
 
-## List images
- docker image
+$ docker top                        (Running process)
 
-## Running process
- docker top 
+$ docker push/pull {image}          (Scaricare e caricare immagini)
 
-## Scaricare e caricare immagini
- docker push/pull {image}
+$ docker run -i -t ubuntu /bin/bash (Lanciare un'immagine nel terminale)
 
-## Lanciare un'immagine nel terminale
- docker run -i -t ubuntu /bin/bash
+$ docker start/stop                 (Manage container)
 
-## Manage container
- docker start/stop 
-
-## Remove container
- docker rm {container id}
+$ docker rm {container id}          (Remove container)
