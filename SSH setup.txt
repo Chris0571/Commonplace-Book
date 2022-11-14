@@ -1,0 +1,42 @@
+DEBIAN
+
+## check if sshd service is active and running
+systemctl status ssh
+
+## in case your SSH service in not in Running
+systemctl enable ssh --now
+
+## check the port number
+ss -ntlp     OR     netstat -ntlp
+
+## check if firewalld is running
+firewall-cmd --state
+ /running
+
+## if the above command returns 'not running' then you can start the service using:
+systemctl start firewalld
+
+## get your default zone
+firewall-cmd --get-default-zone
+ /public
+
+## get the list of interfaces part of your active zone
+firewall-cmd --get-active-zones
+ /public
+   /interfaces: enp0s3 enp0s8
+
+## check if SSH service is enabled in your firewall
+root@ubuntu:~# firewall-cmd --zone=public --list-services
+ /dhcpv6-client ssh
+ 
+ ## in case it is not present, you can manually add the same using
+firewall-cmd --zone=public --add-service=ssh --permanent
+firewall-cmd --reload
+
+
+ADD A PORT
+
+## SSH service is running on a different port
+firewall-cmd --add-port=5022/tcp --zone=public --permanent
+firewall-cmd --reload
+firewall-cmd --zone=public --list-ports
