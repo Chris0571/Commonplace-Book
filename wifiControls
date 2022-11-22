@@ -1,0 +1,11 @@
+Use wifi via terminal
+
+ --> list available networks
+# iwlist wlan0 scan
+	or
+# iwlist wlan0 scan | grep ESSID
+
+  --> connect
+# nmcli d wifi connect /name/ password /password/
+	or
+# nmtui		[graphic]
