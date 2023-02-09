@@ -1,0 +1,23 @@
+
+#sintassi per far riconoscere alla shell che deve riconoscere i numeri e svolgere le operazioni
+$ ((espressione))
+
+#/ + --> somma
+#/ - --> sottrazione
+#/ * --> moltiplicazione 
+#/ ** --> potenza
+#/ / --> divisione
+#/ % --> resto divisione
+
+#assegna un valore alle variabili e anche a espressioni che includono quelle (solo interi)
+declare -i i=43 j=72 k=i+j
+echo $i + $j = $k
+
+#stampa la soluzione svolgendo anche calcoli decimali
+echo "$(echo '1.1 + 2.2' | bc)"
+
+#divide il numero datogli in numeri primi
+factor [numero]
+
+
+
