@@ -2,10 +2,10 @@
 
 sudo apt autoremove 
 sudo apt update 
-sudo apt full-upgrade 
+sudo apt full-upgrade
 
-echo '
-'
-echo Apt pronto !
+
+echo "
+Apt pronto all'uso!"
 
 
