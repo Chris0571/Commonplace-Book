@@ -31,13 +31,16 @@
 
 #7) Incrementare l, dopo averlo moltiplicato per 3, e aver salvato il risultato nella variabile 'pippo'
 
-#   [test]
-#8) verificare se viene prima "vero" o "falso", alfabeticamente
-#[ 'falso' > 'vero' ] ; echo $?
+#   [[test]]
+
+#//8) verificare se viene prima "vero" o "falso", alfabeticamente
+#[[ 'falso' > 'vero' ]] ; echo $?
 
 #9) verificare se 5 è minore di 'l'
 
-#10) verificare viene prima "VERO" o "falso", alfabeticamente
+#//10) verificare viene prima "VERO" o "falso", alfabeticamente
+#[[ 'falso' > 'VERO' ]] ; echo $?
+
 
 #11)salvare nelle variabili 'nome1', 'nome2' i nomi di due membri di questo corso
 #M=Michele
