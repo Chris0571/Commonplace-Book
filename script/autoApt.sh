@@ -2,7 +2,7 @@
 
 sudo apt autoremove 
 sudo apt update 
-sudo apt full-upgrade
+sudo apt full-upgrade -y
 
 
 echo "
