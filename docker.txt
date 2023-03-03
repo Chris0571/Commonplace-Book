@@ -1,14 +1,21 @@
   
- docker ps -a                      (List container)
+$ docker ps -a                      
+					(List container)
 
-$ docker image                      (List images)
+$ docker image ls / images          
+					(List images)
 
-$ docker top                        (Running process)
+$ docker top {container id}         
+					(Running process)
 
-$ docker push/pull {image}          (Scaricare e caricare immagini)
+$ docker push/pull {image}          
+					(Scaricare e caricare immagini)
 
-$ docker run -i -t ubuntu /bin/bash (Lanciare un'immagine nel terminale)
+$ sudo docker run -d -p 8000:3000 bkimminich/juice-shop
+				    	(Lanciare un'immagine nel terminale)
 
-$ docker start/stop                 (Manage container)
+$ docker start/stop {container id}  
+					(Manage container)
 
-$ docker rm {container id}          (Remove container)
+$ docker rm {container id}          
+					(Remove container)
