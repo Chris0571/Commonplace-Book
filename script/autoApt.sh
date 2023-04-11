@@ -1,11 +1,14 @@
 #! /bin/bash
 
-sudo apt autoremove 
 sudo apt update 
 sudo apt full-upgrade -y
+sudo apt autoremove 
+sudo apt autoclean
 
 
 echo "
+
+
 Apt pronto all'uso!"
 
 

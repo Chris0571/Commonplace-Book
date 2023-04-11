@@ -1,0 +1,53 @@
+Filesistem Hierarchy Standard {FHS}
+
+Il filesystem è un metodo che definisce l'organizzazione standard dei file di un sistema, è stato definito negli anni '90 per il grande numero di SO nascenti all'epoca su base UNIX.
+
+Nel sistema a base UNIX tutti gli elementi sono considerati 'file' e sono presenti da qualche parte nel sistema, anche se talvolta non visibili perchè nascosti.
+
+Il FS è strutturato come un albero dove nel punto più alto paradossalmente c'è la cartella root (radice) ovvero la cartella home dell'amministratore, da qui partono tutte le varie cartelle sottostanti.
+		Alcune sono:
+	/  -> dir root
+	/bin -> contiene i file in binario
+	/dev -> contiene i devices montati
+	/home -> è la dir home dell'utente loggato attualmente
+	/usr -> è la dir dell'utente loggato
+	/boot -> contiene i dati riguardanti l'avvio
+	/tmp -> contiene i file temporanei
+	/srv -> i vari servizi
+	
+Per muoversi e gestire il FS si utilizzano i 'comandi', file in binario che indicano al sistema ciò che deve fare per eseguire l'ordine datogli.	
+		Questi sono:
+
+	pwd -> stampa la directory corrente
+	ls ->	stampa in output gli elementi presenti nella directory corrente.
+	cd -> change directory
+	cat/tac -> stampa in output il contenuto di uno o più file dati come argomento.
+	less -> legge un file
+	more -> legge un file mostrandolo a pagine
+	head/tail -> stampa l'inizio/fine di un file
+	touch -> 'tocca' un file aggiornando l'ultima modifica (t), se non esiste lo crea.
+	echo -> banalmente come l'echo della voce ripete gli argomenti dati, può essere impostato un output a piacimento e lo scriverà lì.
+	rm/rmdir -> rimuove un file o una cartella
+	cp -> copia un file scelto in una posizione indicato.
+	mv -> sposta un file da una posizione ad una indicata, può essere usato anche per rinominare un file dandogli come posizione il
+		punto in cui è attualmente e cambiando il nome di quest'ultima.
+	ln -> crea un collegamento di un file o cartella in una posizione indicata.
+	grep -> cerca un pattern/strigna datogli all'interno di un file indicato.
+	wc -> wordcount conta le parole,linee o caratteri di un file.
+	
+	man -> comando importante che permette di visualizzare il manuale di praticamente tutti i comandi.
+	apropos -> comando che datogli un argomento cerca tutti i comandi che hanno a che fare con quest'ultimo.
+
+Esistono simboli speciali che hanno un particolare significato/utilizzo per poter facilitare la ricerca o la raccolta di file, questo processo è chiamato Globbing, alcuni di questi sono:
+
+	~ -> homedir
+	* -> tutto 
+	? -> tutto una volta
+	[] -> tutto ciò che comprende che c'è tra le parentesi
+
+
+
+
+	
+
+

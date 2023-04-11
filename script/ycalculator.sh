@@ -4,7 +4,7 @@
 #IFS=/
 
 echo -n "Inserisci il tuo anno di nascita e calcolerò la tua età: "
-read birty
+read birthy
 #IFS="$OLD_IFS"
 
 #echo -n "Che anno è: "
@@ -12,7 +12,7 @@ date > dataodierna
 actualy=`awk '{print substr($4,1,4)}' ./dataodierna`
 #echo siamo nell anno $actualy
 
-(( eta = $actualy - $birty ))
+(( eta = $actualy - $birthy ))
 echo "Hai $eta anni!"
 
 rm dataodierna
