@@ -1,5 +1,5 @@
-
-#sintassi per far riconoscere alla shell che deve riconoscere i numeri e svolgere le operazioni
+#! bin/bash
+#sintassi per far capire alla shell che deve riconoscere i numeri e svolgere le operazioni
 $ ((espressione))
 
 #/ + --> somma

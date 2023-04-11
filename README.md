@@ -1,6 +1,3 @@
 # Commonplace-Book
-Una raccolta dei miei appunti su vari argomenti 
-
-/Dare una sistemata agli appunti/
-
-/Strutturare una organizzazione/
+Una raccolta dei miei appunti su vari argomenti alcuni sistemati per categoria ed altri no.
+Fanne buon uso :D

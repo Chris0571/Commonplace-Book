@@ -1,0 +1,13 @@
+disabilitare la swap perchè potrebbe dargli fastidio
+(inoltre potrebbe causare la creazione di una copia della chiave)
+$ sudo swapoff -a
+
+$tomb
+     dig <dimensione> <nome> /scava una nuova 'fossa' di dimensione prestabilita
+     forge /'forgia' una chiave unica accoppiata ad una password
+     lock <tomb_file> -k <key>  /associa la chiave alla tomba
+     open <tomb_file> -k <key> /apre la tomba fornendo posizione tomba, chiave ed  inserando la password della chiave
+     list /è ovvio..
+     close <tomb_file> /è ovvio..
+     #per altri consultare il manuale
+
