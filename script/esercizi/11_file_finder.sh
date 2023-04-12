@@ -4,8 +4,13 @@
 fileLocali=$(ls)
 
 #trovare quali sono .txt e visualizzarli
-
-if [[ -f $fileLocali ]] ; then
-    echo 
+for file in $fileLocali
+do
+if [[ $file = *.txt ]] ; then
+    echo $file
 
 fi
+done
+
+
+# oppure semplicemente { ls *.txt }
