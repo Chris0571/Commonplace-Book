@@ -1,0 +1,20 @@
+1. Scrivi uno script che stampi la data e l'ora attuali ogni volta che viene eseguito.
+2. Scrivi uno script che richieda all'utente di inserire due numeri e restituisca la loro somma.
+3. Scrivi uno script che prenda in input un nome e lo saluti con un messaggio personalizzato.
+4. Scrivi uno script che prenda in input una lista di numeri e restituisca il numero più grande presente.
+5. Scrivi uno script che prenda in input una stringa e restituisca il numero di parole presenti in essa.
+6. Scrivi uno script che prenda in input una lista di numeri e restituisca la loro media.
+7. Scrivi uno script che prenda in input un nome file e verifichi se esiste o meno.
+8. Scrivi uno script che prenda in input un nome file e restituisca il numero di righe presenti al suo interno.
+9. Scrivi uno script che prenda in input una lista di numeri e restituisca la somma dei numeri dispari presenti.
+10. Scrivi uno script che prenda in input una lista di nomi e verifichi se il nome "Marco" è presente o meno.
+11. Scrivi uno script che visualizza tutti i file della directory corrente con l'estensione .txt
+12. Scrivi uno script che conta il numero di parole in un file di testo specificato dall'utente
+13. Scrivi uno script che crea una directory con il nome fornito dall'utente
+14. Scrivi uno script che copia tutti i file con l'estensione .py dalla directory corrente a una directory specificata dall'utente
+15. Scrivi uno script che controlla tutti i file nella directory corrente e mostra i file che contengono una determinata parola fornita dall'utente
+16. Scrivi uno script che rimuove tutti i file nella directory corrente che hanno meno di 100 byte
+17. Scrivi uno script che controlla tutti i file nella directory corrente e mostra i file che hanno un nome che inizia con una lettera maiuscola
+18. Scrivi uno script che ordina in ordine alfabetico i nomi dei file nella directory corrente
+19. Scrivi uno script che rinomina tutti i file con una determinata estensione nella directory corrente aggiungendo un prefisso fornito dall'utente
+20. Scrivi uno script per rimuovere tutti i file vuoti nella directory corrente
