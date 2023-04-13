@@ -7,8 +7,10 @@ nomi=$(cat $lista)
 for nome in $nomi
 do
     if [[ $nome = "Michele" ]]; then
-    echo "Trovato!"
-    break
+        echo "Trovato!"
+        break
+        else 
+            echo $nome " non trovato 7:"
     fi
 done
 

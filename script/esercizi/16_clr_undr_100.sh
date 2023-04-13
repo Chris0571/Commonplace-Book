@@ -12,7 +12,7 @@ do
 sizeNumber=$(wc -c $file | awk '{print $1;}')
     if [[ $sizeNumber -lt 100 ]] ; then
     echo $file ha $sizeNumber byte
-#   rm $file
-#   echo $file " cancellato"
+#   commentato per non eliminare file utili
+#   rm $file ; echo $file " cancellato"
     fi
 done
