@@ -1,6 +1,6 @@
 """dato un numero di conigli 
     calcola il il numero di conigli 3 anni dopo"""
-numero_scelto=input('Inserisci un numero: ')
+numero_scelto=int(input('Inserisci un numero: '))
 
 def fibonacci_ricorsiva(anno:int)->int:
     """questa funzione essendo ricorsiva viene eseguita più e più volte
@@ -13,7 +13,7 @@ def fibonacci_iterativa(anno:int)->int:
     """questa funzione risulta molto più veloce nell'esecuzione perchè
     non va a richiamare se stessa al suo interno risultando non ricorsiva"""
     lista=[1,1]
-    for indice in range(2,anno+1):
+    for indice in range(2,anno +1):
         lista.append(lista[indice -1] + lista[indice -2])
     return lista[-1]
 
