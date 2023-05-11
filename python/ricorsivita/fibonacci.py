@@ -5,7 +5,7 @@ numero_scelto=int(input('Inserisci un numero: '))
 def fibonacci_ricorsiva(anno:int)->int:
     """questa funzione essendo ricorsiva viene eseguita più e più volte
     per soddisfare le richieste della funzione stessa"""
-    if anno == 0 or anno == 1:
+    if anno in (0, 1):
         return 1
     return fibonacci_ricorsiva(anno -1) + fibonacci_ricorsiva(anno -2)
 
