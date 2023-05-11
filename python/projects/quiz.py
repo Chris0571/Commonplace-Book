@@ -1,16 +1,25 @@
 import time
+import random
 
-is_playing = input("Vuoi giocare? ")
+domande = {0: 'Vuoi giocare? s/n\n', 1: "Da dove deriva il nome di Python?", 2: "Quali tra queste non è una libreria Python", 3: "Quali sono i tipi di dati primitivi in Python?",
+           4: "Qual è il metodo utilizzato per aggiungere un elemento alla fine di una lista in Python?", 5: "Quale è il simbolo usato per definire una funzione in Python?", 6: "Quale operatore viene utilizzato in Python per l'assegnazione di valore ad una variabile?", 7: "Qual è il risultato dell'esecuzione del seguente codice Python?\n>>>x = 5\n>>>if x > 2:\n>>>print('x è maggiore di 2')"}
+
+
+insulti = ["Nein", "Non sei capace",
+           "Vai a studiare un altro linguaggio", "Cambia lavoro", "Arrenditi", "Ancora che ci provi?", "Questo non me l'aspettavo", "Ce la puoi fare!", "press F to pay respect", "Se continui così il tuo score sarà 0"]
+
+# print(len(insulti))
+
+is_playing = input(domande[0])
 PUNTI = 0
-if is_playing.lower() != "si":
+if is_playing.lower() != "s":
     print("Ok ma stai calmo")
     quit()
 print()
 
 
-print("Da dove deriva il nome di Python?")
-print("A } Dal 'python' della famiglia pythonidae dei rettili")
-print("B } Dallo show televisivo Monty Python's Flying Circus")
+print(domande[1] +
+      "\nA } Dal 'python' della famiglia pythonidae dei rettili\nB } Dallo show televisivo Monty Python's Flying Circus")
 domanda = input("Risposta: ")
 
 if domanda.lower() == "b":
@@ -18,12 +27,13 @@ if domanda.lower() == "b":
     time.sleep(1)
     PUNTI += 1
 else:
-    print("Nein")
+    random_n = int(random.randint(0, 10))
+    print(insulti[random_n])
     time.sleep(1)
 print()
 
 
-print("Quali tra queste non è una libreria Python")
+print(domande[2])
 print("A } math")
 print("B } random")
 print("C } chatgpt")
@@ -35,12 +45,13 @@ if domanda.lower() == "c":
     time.sleep(1)
     PUNTI += 1
 else:
-    print("Sei un'ignorante!")
+    random_n = int(random.randint(0, 10))
+    print(insulti[random_n])
     time.sleep(1)
 print()
 
 
-print("Quali sono i tipi di dati primitivi in Python?")
+print(domande[3])
 print("A } string, int, float, bool")
 print("B } list, tuple, set, dict")
 print("C } char, double, long, short")
@@ -52,12 +63,13 @@ if domanda.lower() == "a":
     time.sleep(1)
     PUNTI += 1
 else:
-    print("Cambia lavoro")
+    random_n = int(random.randint(0, 10))
+    print(insulti[random_n])
     time.sleep(1)
 print()
 
 
-print("Qual è il metodo utilizzato per aggiungere un elemento alla fine di una lista in Python?")
+print(domande[4])
 print("A } add()")
 print("B } push()")
 print("C } append()")
@@ -69,11 +81,12 @@ if domanda.lower() == "c":
     time.sleep(1)
     PUNTI += 1
 else:
-    print("Arrenditi")
+    random_n = int(random.randint(0, 10))
+    print(insulti[random_n])
     time.sleep(1)
 print()
 
-print("Quale è il simbolo usato per definire una funzione in Python?")
+print(domande[5])
 print("A } ::")
 print("B } =>")
 print("C } ->")
@@ -85,11 +98,12 @@ if domanda.lower() == "c":
     time.sleep(1)
     PUNTI += 1
 else:
-    print("Vai a studià va..")
+    random_n = int(random.randint(0, 10))
+    print(insulti[random_n])
     time.sleep(1)
 print()
 
-print("Quale operatore viene utilizzato in Python per l'assegnazione di valore ad una variabile?")
+print(domande[6])
 print("A } =")
 print("B } ==")
 print("C } ===")
@@ -101,11 +115,12 @@ if domanda.lower() == "a":
     time.sleep(1)
     PUNTI += 1
 else:
-    print("Se hai sbagliato questa stai messo male")
+    random_n = int(random.randint(0, 10))
+    print(insulti[random_n])
     time.sleep(1)
 print()
 
-print("Qual è il risultato dell'esecuzione del seguente codice Python?\n>>>x = 5\n>>>if x > 2:\n>>>print('x è maggiore di 2')")
+print(domande[7])
 print("A } Viene stampato 'x è maggiore di 2'")
 print("B } Viene sollevata un'eccezione di tipo 'SyntaxError'")
 print("C } Non viene stampato nulla perché l'if non è soddisfatto.")
@@ -116,7 +131,8 @@ if domanda.lower() == "b":
     time.sleep(1)
     PUNTI += 1
 else:
-    print("Torna a studià che è meglio")
+    random_n = int(random.randint(0, 10))
+    print(insulti[random_n])
     time.sleep(1)
 print()
 
